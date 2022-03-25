@@ -40,59 +40,64 @@ function setup() {
 
 
 }
-
+//Calculate starting sun Angle based on current time//
 function getSunAngle() {
     let h = hour();
+    let m = minute();
+    let s = second();
+    let minAngle = (6.28/24)/60;
+    let secAngle = (minAngle)/60;
+    let extraAngle = (minAngle*m)+(secAngle*s);
     switch (h) {
         case 0:
-            return 18 * (-6.28 / 24);
+            return 18 * (-6.28 / 24) + extraAngle;
         case 1:
-            return 19 * (-6.28 / 24);
+            return 19 * (-6.28 / 24) + extraAngle;
         case 2:
-            return 20 * (-6.28 / 24);
+            return 20 * (-6.28 / 24) + extraAngle;
         case 3:
-            return 21 * (-6.28 / 24);
+            return 21 * (-6.28 / 24) + extraAngle;
         case 4:
-            return 22 * (-6.28 / 24);
+            return 22 * (-6.28 / 24) + extraAngle;
         case 5:
-            return 23 * (-6.28 / 24);
+            return 23 * (-6.28 / 24) + extraAngle;
         case 6:
-            return 0;
+            return 0 + extraAngle;
         case 7:
-            return -6.28 / 24;
+            return -6.28 / 24 + extraAngle;
         case 8:
-            return 2 * (-6.28 / 24);
+            return 2 * (-6.28 / 24) + extraAngle;
         case 9:
-            return 3 * (-6.28 / 24);
+            return 3 * (-6.28 / 24) + extraAngle;
         case 10:
-            return 4 * (-6.28 / 24);
+            return 4 * (-6.28 / 24) + extraAngle;
         case 11:
-            return 5 * (-6.28 / 24);
+            return 5 * (-6.28 / 24) + extraAngle;
         case 12:
-            return 6 * (-6.28 / 24);
+            return 6 * (-6.28 / 24) + extraAngle;
         case 13:
-            return 7 * (-6.28 / 24);
+            return 7 * (-6.28 / 24) + extraAngle;
 
         case 14:
-            return 8 * (-6.28 / 24);
+            return 8 * (-6.28 / 24) + extraAngle;
         case 15:
-            return 9 * (-6.28 / 24);
+            return 9 * (-6.28 / 24) + extraAngle;
         case 16:
-            return 10 * (-6.28 / 24);
+            return 10 * (-6.28 / 24) + extraAngle;
         case 17:
-            return 11 * (-6.28 / 24);
+            return 11 * (-6.28 / 24) + extraAngle;
         case 18:
-            return 12 * (-6.28 / 24);
+            return 12 * (-6.28 / 24) + extraAngle;
         case 19:
-            return 13 * (-6.28 / 24);
+            return 13 * (-6.28 / 24) + extraAngle;
         case 20:
-            return 14 * (-6.28 / 24);
+            return 14 * (-6.28 / 24) + extraAngle;
         case 21:
-            return 15 * (-6.28 / 24);
+            return 15 * (-6.28 / 24) + extraAngle;
         case 22:
-            return 16 * (-6.28 / 24);
+            return 16 * (-6.28 / 24) + extraAngle;
         case 23:
-            return 17 * (-6.28 / 24);
+            return 17 * (-6.28 / 24) + extraAngle;
 
 
     }
